@@ -1,13 +1,16 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
+// 方便调试
+// import Adapter from 'enzyme-adapter-react-16';
+// Enzyme.configure({adapter: new Adapter()});
+
 import { findByTestAttr } from '../../../Utils';
 import Header from './index';
 
 const setUp = (props={}) => {
-    const component = shallow(<Header {...props} />);
-    return component;
+  const component = shallow(<Header {...props} />);
+  return component;
 };
-
 
 describe('Header Component', () => {
   let component;
