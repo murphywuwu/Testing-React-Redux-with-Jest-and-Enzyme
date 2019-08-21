@@ -1,9 +1,8 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import Headline from './index';
-import checkPropTypes from 'check-prop-types';
 
-import { findByTestAttr } from '../../../Utils'
+import { findByTestAttr, checkProps } from '../../../Utils'
 
 const setUp = (props={}) => {
   const component = shallow(<Headline {...props}/>)
@@ -20,7 +19,7 @@ describe('Headline Component', () => {
         desc: 'Test Desc'
       }
 
-      const propsErr = checkPropTypes(Headline.propTypes, expectdProps, 'props', Headline.name)
+      const propsErr = checkProps(Headline, expectdProps)
       expect(propsErr).toBeUndefined();
     })
   })
