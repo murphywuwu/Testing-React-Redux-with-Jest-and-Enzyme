@@ -7,7 +7,10 @@
     "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3"
+    "react-redux": "^7.1.0",
+    "react-scripts": "2.1.3",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,7 +31,7 @@
     "@babel/core": "*",
     "@babel/preset-env": "*",
     "@babel/preset-react": "*",
-    "babel-jest": "*",
+    "babel-jest": "23.6.0",
     "check-prop-types": "^1.1.2",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
