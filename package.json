@@ -28,7 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@babel/core": "*",
+    "@babel/core": "^7.1.6",
     "@babel/preset-env": "*",
     "@babel/preset-react": "*",
     "babel-jest": "23.6.0",
